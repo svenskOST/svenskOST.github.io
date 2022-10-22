@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+::placeholder{
+    position: relative;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background: #888;
+}
+::-webkit-scrollbar-thumb{
+    background: #FF0000;
+}
+::placeholder{
+    font-size: 13pt;
+}
+body{
+    background: #2D2D2D;
+    height: 1000px;
+}
+#topbrand{
+    position: relative;
+    width: 600px;
+    height: 100px;
+    top: 8px;
+    left: 33px;
+}
+#toplogo{
+    position: relative;
+}
+#topmotto{
+    position: relative;
+    width: 450px;
+    font-size: 23pt;
+    top: -95px;
+    left: 160px;
+}
+#search{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    top: -53px;
+    right: 8vw;
+}
+#searchbar{
+    position: relative;
+    width: 180px;
+    height: 35px;
+}
+.mg{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    filter: invert(16%) sepia(99%) saturate(7404%) hue-rotate(4deg) brightness(95%) contrast(118%);
+    left: -10px;
+    top: 3.5px;
+}
+input{
+    font-size: 13pt;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+#navbar{
+    position: absolute;
+    top: 137px;
+    height: 85px;
+    width: 100%;
+    background: #FF0000;
+    z-index: 10;
+}
+.categories{
+    position: relative;
+    width: 75vw;
+    left: 20px;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 22pt;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.animation1{
+    height: 85px;
+    padding-left: 1.414vw;
+    padding-right: 1.414vw;
+    position: relative;
+    background: #FF0000;
+}
+.animationtxt1{
+    position: relative;
+    top: 16px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    white-space: nowrap;
+}
+#account{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 15pt;
+    position: relative;
+    width: 140px;
+    top: -60px;
+    left: 83vw;
+    display: flex;
+    justify-content: space-between;
+}
+#articles{
+    position: relative;
+    top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+h1{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28pt;  
+    position: relative;
+    top: -6px;
+    left: 3px;
+}
+h2{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24pt;
+    line-height: 28pt;
+    position: relative;
+    left: 5px;
+}
+#mainarticle{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18pt;
+    position: relative;
+    top: -11.5px;
+    left: 3px;
+}
+p{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16pt;
+    position: relative;
+    left: 5px;
+}
+.article{
+    padding: 65px;
+}
+#article1{
+    position: relative;
+    width: 535px;
+}
+#article2{
+    position: relative;
+    width: 366px;
+}
+#article3{
+    position: relative;
+    width: 366px;
+}
+#article4{
+    position: relative;
+    width: 366px;
+}
+#articleimg1{
+    position: relative;
+    border: 3.5px solid red;
+    width: 528px;
+    height: 296px;
+}
+#articleimg2{
+    position: relative;
+    border: 3px solid red;
+    width: 360px;
+    height: 240px;
+}
+#articleimg3{
+    position: relative;
+    border: 3px solid red;
+    width: 360px;
+    height: 338px;
+}
+#articleimg4{
+    position: relative;
+    border: 3px solid red;
+    width: 360px;
+    height: 240px;
+}
+.articletxt{
+    position: relative;
+    top: 5px;
+}
+#articletxt1{
+    position: relative;
+    width: 500px;
+}
+#articletxt2{
+    position: relative;
+    width: 360px;
+}
+#articletxt3{
+    position: relative;
+    width: 400px;
+}
+#articletxt4{
+    position: relative;
+    width: 500px;
+}
+.footer{
+    background: black;
+    height: 54vh;
+    position: relative;
+    top: 400px;
+}
+.info{
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 34pt;
+    justify-content: space-evenly;
+    display: flex;
+    width: 650px;
+    top: 40px;
+    left: 80px;
+}
+.download{
+    position: relative;
+    bottom: 0px;
+    left: -40px;
+    height: 100px;
+    width: 100px;
+}
+.download1{
+    position: relative;
+    left: 15px;
+    bottom: 32px;
+}
+.download2{
+    position: relative;
+    left: 10px;
+    bottom: 27px;
+}
+.ios{
+    position: relative;
+    border: 3px solid white;
+    width: 285px;
+    height: 70px;
+    left: 800px;
+    bottom: 210px;
+}
+.android{
+    position: relative;
+    border: 3px solid white;
+    width: 285px;
+    height: 70px;
+    left: 800px;
+    bottom: 170px;
+}
+.iosdownload{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 18pt;
+    position: relative;
+    left: 115px;
+    top: 15px;
+    width: 200px;
+}
+.androiddownload{
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 16pt;
+    position: relative;
+    left: 108px;
+    top: 17px;
+    width: 200px;
+}
+.socialmedia{
+    position: relative;
+    bottom: 160px;
+    left: 1080px;
+    width: 370px;
+    height: 100px;
+    justify-content: space-evenly;
+    display: flex;
+}
+.youtube{
+    position: relative;
+    bottom: 6px;
+}
+.line{
+    position: relative;
+    background: #FF0000;
+    width: 88vw;
+    height: 4px;
+    left: 6vw;
+    top: 80px;
+}
+.brand{
+    width: 400px;
+    height: 50px;
+    position: relative;
+    left: 110px;
+    top: 100px;
+}
+.bottomlogo{
+    position: relative;
+}
+.bottommotto{
+    position: relative;
+    font-size: 24px;
+    top: -76px;
+    left: 128px;
+}
