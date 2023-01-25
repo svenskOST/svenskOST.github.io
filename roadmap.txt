@@ -1,0 +1,17 @@
+- Fixa footern för olika upplösningar
+
+- Runda kanter på artiklarna mm.
+
+- Göra menyn som dyker upp när kategorierna ej får plats, ska ha hover animation där linjerna åker upp och ner igen lite snabbt efter varandra.
+  När man klickar på menyn ska två linjer försvinna och den mittersta ska expanderas till självaste menyn - som jag gjorde på Amins sida.
+  I menyn ska kategorierna finnas och vid hover ska de flyttas åt höger med en triangel framför - som de flyttas uppåt normalt sett.
+
+- Göra klart all content - artiklar och subsidor
+
+- Göra ett forum där man kan publicera inlägg.
+
+- Skapande utav konton.
+
+- Göra forms för kontakt osv. enligt uppgiftsdelen.
+
+- Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida)
