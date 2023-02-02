@@ -1,6 +1,8 @@
 - Fixa footern för olika upplösningar
 
-- Runda kanter på artiklarna mm.
+KLART Runda kanter på artiklarna mm.
+
+KLART Hover animationer.
 
 - Göra menyn som dyker upp när kategorierna ej får plats, ska ha hover animation där linjerna åker upp och ner igen lite snabbt efter varandra.
   När man klickar på menyn ska två linjer försvinna och den mittersta ska expanderas till självaste menyn - som jag gjorde på Amins sida.
@@ -14,4 +16,6 @@
 
 - Göra forms för kontakt osv. enligt uppgiftsdelen.
 
-- Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida)
+- Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
+
+- Fixa flickering vid hovering animationer.

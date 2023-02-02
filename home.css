@@ -9,9 +9,10 @@
     width: 15px;
 }
 ::-webkit-scrollbar-track{
-    background: #888;
+    background: rgba(135, 135, 135, 0.5);
 }
 ::-webkit-scrollbar-thumb{
+    border-radius: 7px;
     background: #FF0000;
 }
 ::placeholder{
@@ -20,6 +21,15 @@
 body{
     background: #2D2D2D;
     height: 1000px;
+}
+#topbox{
+    width: 100%;
+    height: 137px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #212121;
+    z-index: 15;
 }
 #topbrand{
     position: relative;
@@ -49,6 +59,8 @@ body{
     position: relative;
     width: 180px;
     height: 35px;
+    border-radius: 10px;
+    border-width: 0px;
 }
 .mg{
     position: relative;
@@ -59,7 +71,7 @@ body{
     top: 3.5px;
 }
 input{
-    font-size: 13pt;
+    font-size: 15pt;
 }
 a:link{
     color: white;
@@ -76,6 +88,8 @@ a:visited{
     width: 100%;
     background: #FF0000;
     z-index: 10;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 7px 15px rgb(10, 10, 10);
 }
 .categories{
     position: relative;
@@ -152,7 +166,7 @@ p{
     left: 5px;
 }
 .article{
-    padding: 65px;
+    margin: 65px;
 }
 #article1{
     position: relative;
@@ -161,6 +175,7 @@ p{
 #article2{
     position: relative;
     width: 366px;
+    height: 418px;
 }
 #article3{
     position: relative;
@@ -169,26 +184,35 @@ p{
 #article4{
     position: relative;
     width: 366px;
+    height: 485px;
 }
 #articleimg1{
+    transition-duration: 0.2s;
+    border-radius: 20px;
     position: relative;
     border: 3.5px solid red;
     width: 528px;
     height: 296px;
 }
 #articleimg2{
+    transition-duration: 0.2s;
+    border-radius: 20px;
     position: relative;
     border: 3px solid red;
     width: 360px;
     height: 240px;
 }
 #articleimg3{
+    transition-duration: 0.2s;
+    border-radius: 20px;
     position: relative;
     border: 3px solid red;
     width: 360px;
     height: 338px;
 }
 #articleimg4{
+    transition-duration: 0.2s;
+    border-radius: 20px;
     position: relative;
     border: 3px solid red;
     width: 360px;
@@ -201,6 +225,7 @@ p{
 #articletxt1{
     position: relative;
     width: 500px;
+    height: 120px;
 }
 #articletxt2{
     position: relative;
@@ -214,13 +239,15 @@ p{
     position: relative;
     width: 500px;
 }
-.footer{
-    background: black;
-    height: 54vh;
+#footer{
+    background: rgb(0, 0, 0);
+    height: 58vh; /*54 om det blir problem*/
     position: relative;
     top: 400px;
+    border-radius: 35px 35px 0px 0px;
+    box-shadow: 0 -7px 15px rgb(10, 10, 10);
 }
-.info{
+#info{
     position: relative;
     font-family: 'Titillium Web', sans-serif;
     font-size: 34pt;
@@ -229,6 +256,27 @@ p{
     width: 650px;
     top: 40px;
     left: 80px;
+    height: 200px;
+}
+#info1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+#info2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    height: 130px;
+}
+.infobox{
+    position: relative;
+}
+.infoa{
+    transition-property: left;
+    transition-duration: 0.2s;
+    position: relative;
+    left: 0px;
 }
 .download{
     position: relative;
@@ -247,21 +295,33 @@ p{
     left: 10px;
     bottom: 27px;
 }
-.ios{
+#ios{
+    transition-duration: 0.2s;
     position: relative;
     border: 3px solid white;
+    border-radius: 10px;
     width: 285px;
     height: 70px;
     left: 800px;
     bottom: 210px;
 }
-.android{
+#ios:hover{
+    border-color: #FF0000;
+    border-radius: 0px;
+}
+#android{
+    transition-duration: 0.2s;
     position: relative;
     border: 3px solid white;
+    border-radius: 10px;
     width: 285px;
     height: 70px;
     left: 800px;
     bottom: 170px;
+}
+#android:hover{
+    border-color: #FF0000;
+    border-radius: 0px;
 }
 .iosdownload{
     font-family: 'Titillium Web', sans-serif;
@@ -290,7 +350,11 @@ p{
     justify-content: space-evenly;
     display: flex;
 }
-.youtube{
+.media{
+    transition-duration: 0.2s;
+    z-index: 2;
+}
+#youtube{
     position: relative;
     bottom: 6px;
 }
@@ -301,6 +365,7 @@ p{
     height: 4px;
     left: 6vw;
     top: 80px;
+    border-radius: 10px;
 }
 .brand{
     width: 400px;
