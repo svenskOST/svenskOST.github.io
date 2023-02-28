@@ -1,4 +1,4 @@
-- Fixa footern för olika upplösningar
+- Fixa footern för olika upplösningar, övrig flexibilitet och min-max läge.
 
 KLART Runda kanter på artiklarna mm.
 
@@ -18,4 +18,5 @@ KLART Hover animationer.
 
 - Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
 
-- Fixa flickering vid hovering animationer.
+- Fixa flickering vid hovering animationer (en div med nuvarande div inuti, 
+parent diven är lite större och har mouseleave, medans den mindre har mouseenter).

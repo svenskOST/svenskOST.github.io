@@ -1,28 +1,42 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-::placeholder{
-    position: relative;
-}
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 15px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
     background: rgba(135, 135, 135, 0.5);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     border-radius: 7px;
     background: #FF0000;
 }
-::placeholder{
+
+::placeholder {
     font-size: 13pt;
+    position: relative;
+    left: 10px;
 }
-body{
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+body {
     background: #2D2D2D;
-    height: 1000px;
 }
-#topbox{
+
+#topbox {
     width: 100%;
     height: 137px;
     position: relative;
@@ -31,38 +45,36 @@ body{
     background-color: #212121;
     z-index: 15;
 }
-#topbrand{
+
+#topbrand {
     position: relative;
     width: 600px;
     height: 100px;
     top: 8px;
     left: 33px;
 }
-#toplogo{
+
+#toplogo {
     position: relative;
 }
-#topmotto{
+
+#topmotto {
     position: relative;
     width: 450px;
     font-size: 23pt;
     top: -95px;
     left: 160px;
 }
-#search{
+
+#search {
     position: relative;
     display: flex;
     justify-content: end;
     top: -53px;
     right: 8vw;
 }
-#searchbar{
-    position: relative;
-    width: 180px;
-    height: 35px;
-    border-radius: 10px;
-    border-width: 0px;
-}
-.mg{
+
+#mg {
     position: relative;
     width: 30px;
     height: 30px;
@@ -70,53 +82,54 @@ body{
     left: -10px;
     top: 3.5px;
 }
-input{
+
+
+#searchbar {
+    position: relative;
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+input {
     font-size: 15pt;
 }
-a:link{
-    color: white;
-    text-decoration: none;
-}
-a:visited{
-    color: white;
-    text-decoration: none;
-}
-#navbar{
+
+#navbar {
     position: absolute;
     top: 137px;
-    height: 85px;
+    height: 11.1vh;
     width: 100%;
     background: #FF0000;
     z-index: 10;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 7px 15px rgb(10, 10, 10);
 }
-.categories{
+
+#categories {
     position: relative;
     width: 75vw;
-    left: 20px;
+    left: 2vw;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 22pt;
+    font-size: 2vw;
     color: white;
     display: flex;
     justify-content: space-between;
 }
-.animation1{
-    height: 85px;
+
+.animation1 {
+    height: 11.1vh;
     padding-left: 1.414vw;
     padding-right: 1.414vw;
-    position: relative;
-    background: #FF0000;
 }
-.animationtxt1{
-    position: relative;
-    top: 16px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 30px;
+
+.animationtxt1 {
     white-space: nowrap;
+    transition-duration: 0.2s;
 }
-#account{
+
+#account {
     color: white;
     font-family: 'Titillium Web', sans-serif;
     font-size: 15pt;
@@ -127,66 +140,42 @@ a:visited{
     display: flex;
     justify-content: space-between;
 }
-#articles{
+
+#articles {
     position: relative;
     top: 170px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-h1{
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 28pt;  
-    position: relative;
-    top: -6px;
-    left: 3px;
-}
-h2{
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 24pt;
-    line-height: 28pt;
-    position: relative;
-    left: 5px;
-}
-#mainarticle{
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 18pt;
-    position: relative;
-    top: -11.5px;
-    left: 3px;
-}
-p{
-    color: white;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 16pt;
-    position: relative;
-    left: 5px;
-}
-.article{
+
+.article {
     margin: 65px;
 }
-#article1{
+
+#article1 {
     position: relative;
     width: 535px;
 }
-#article2{
+
+#article2 {
     position: relative;
     width: 366px;
     height: 418px;
 }
-#article3{
+
+#article3 {
     position: relative;
     width: 366px;
 }
-#article4{
+
+#article4 {
     position: relative;
     width: 366px;
     height: 485px;
 }
-#articleimg1{
+
+#articleimg1 {
     transition-duration: 0.2s;
     border-radius: 20px;
     position: relative;
@@ -194,7 +183,8 @@ p{
     width: 528px;
     height: 296px;
 }
-#articleimg2{
+
+#articleimg2 {
     transition-duration: 0.2s;
     border-radius: 20px;
     position: relative;
@@ -202,7 +192,8 @@ p{
     width: 360px;
     height: 240px;
 }
-#articleimg3{
+
+#articleimg3 {
     transition-duration: 0.2s;
     border-radius: 20px;
     position: relative;
@@ -210,7 +201,8 @@ p{
     width: 360px;
     height: 338px;
 }
-#articleimg4{
+
+#articleimg4 {
     transition-duration: 0.2s;
     border-radius: 20px;
     position: relative;
@@ -218,36 +210,78 @@ p{
     width: 360px;
     height: 240px;
 }
-.articletxt{
+
+h1 {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 28pt;
+    position: relative;
+    top: -6px;
+    left: 3px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 24pt;
+    line-height: 28pt;
+    position: relative;
+    left: 5px;
+}
+
+p {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16pt;
+    position: relative;
+    left: 5px;
+}
+
+#mainarticle {
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 18pt;
+    position: relative;
+    top: -11.5px;
+    left: 3px;
+}
+
+.articletxt {
     position: relative;
     top: 5px;
 }
-#articletxt1{
+
+#articletxt1 {
     position: relative;
     width: 500px;
     height: 120px;
 }
-#articletxt2{
+
+#articletxt2 {
     position: relative;
     width: 360px;
 }
-#articletxt3{
+
+#articletxt3 {
     position: relative;
     width: 400px;
 }
-#articletxt4{
+
+#articletxt4 {
     position: relative;
     width: 500px;
 }
-#footer{
+
+#footer {
     background: rgb(0, 0, 0);
-    height: 58vh; /*54 om det blir problem*/
+    height: 58vh;
     position: relative;
-    top: 400px;
+    top: 350px;
     border-radius: 35px 35px 0px 0px;
     box-shadow: 0 -7px 15px rgb(10, 10, 10);
 }
-#info{
+
+#info {
     position: relative;
     font-family: 'Titillium Web', sans-serif;
     font-size: 34pt;
@@ -258,44 +292,40 @@ p{
     left: 80px;
     height: 200px;
 }
-#info1{
+
+#info1 {
     display: flex;
     flex-wrap: wrap;
     width: 200px;
 }
-#info2{
+
+#info2 {
     display: flex;
     flex-wrap: wrap;
     width: 250px;
     height: 130px;
 }
-.infobox{
+
+.infobox {
     position: relative;
 }
-.infoa{
+
+.infoa {
     transition-property: left;
     transition-duration: 0.2s;
     position: relative;
     left: 0px;
 }
-.download{
+
+#download {
     position: relative;
     bottom: 0px;
     left: -40px;
     height: 100px;
     width: 100px;
 }
-.download1{
-    position: relative;
-    left: 15px;
-    bottom: 32px;
-}
-.download2{
-    position: relative;
-    left: 10px;
-    bottom: 27px;
-}
-#ios{
+
+#ios {
     transition-duration: 0.2s;
     position: relative;
     border: 3px solid white;
@@ -305,11 +335,13 @@ p{
     left: 800px;
     bottom: 210px;
 }
-#ios:hover{
+
+#ios:hover {
     border-color: #FF0000;
     border-radius: 0px;
 }
-#android{
+
+#android {
     transition-duration: 0.2s;
     position: relative;
     border: 3px solid white;
@@ -319,11 +351,13 @@ p{
     left: 800px;
     bottom: 170px;
 }
-#android:hover{
+
+#android:hover {
     border-color: #FF0000;
     border-radius: 0px;
 }
-.iosdownload{
+
+#iosdownload {
     font-family: 'Titillium Web', sans-serif;
     color: white;
     font-size: 18pt;
@@ -332,7 +366,8 @@ p{
     top: 15px;
     width: 200px;
 }
-.androiddownload{
+
+#androiddownload {
     font-family: 'Titillium Web', sans-serif;
     color: white;
     font-size: 16pt;
@@ -341,7 +376,20 @@ p{
     top: 17px;
     width: 200px;
 }
-.socialmedia{
+
+#download1 {
+    position: relative;
+    left: 15px;
+    bottom: 32px;
+}
+
+#download2 {
+    position: relative;
+    left: 10px;
+    bottom: 27px;
+}
+
+#socialmedia {
     position: relative;
     bottom: 160px;
     left: 1080px;
@@ -350,15 +398,18 @@ p{
     justify-content: space-evenly;
     display: flex;
 }
-.media{
+
+.media {
     transition-duration: 0.2s;
     z-index: 2;
 }
-#youtube{
+
+#youtube {
     position: relative;
     bottom: 6px;
 }
-.line{
+
+#line {
     position: relative;
     background: #FF0000;
     width: 88vw;
@@ -367,17 +418,20 @@ p{
     top: 80px;
     border-radius: 10px;
 }
-.brand{
+
+#brand {
     width: 400px;
     height: 50px;
     position: relative;
     left: 110px;
     top: 100px;
 }
-.bottomlogo{
+
+#bottomlogo {
     position: relative;
 }
-.bottommotto{
+
+#bottommotto {
     position: relative;
     font-size: 24px;
     top: -76px;
