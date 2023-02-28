@@ -38,40 +38,45 @@ body {
 
 #topbox {
     width: 100%;
-    height: 137px;
+    height: 150px;
     position: relative;
     top: 0px;
     left: 0px;
     background-color: #212121;
-    z-index: 15;
 }
 
 #topbrand {
     position: relative;
-    width: 600px;
-    height: 100px;
-    top: 8px;
+    width: 580px;
+    height: 80px;
+    top: 35px;
     left: 33px;
+    font-family: 'Monoton', cursive; 
+    color: #FF0000;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
 }
 
 #toplogo {
     position: relative;
+    width: 135px; 
+    height: 125px;
 }
 
 #topmotto {
     position: relative;
-    width: 450px;
     font-size: 23pt;
-    top: -95px;
-    left: 160px;
+    left: 20px;
 }
 
 #search {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: end;
-    top: -53px;
-    right: 8vw;
+    top: 55px;
+    right: 5.5vw;
 }
 
 #mg {
@@ -98,13 +103,13 @@ input {
 
 #navbar {
     position: absolute;
-    top: 137px;
+    top: 150px;
     height: 11.1vh;
     width: 100%;
     background: #FF0000;
     z-index: 10;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0 7px 15px rgb(10, 10, 10);
+    box-shadow: 0 8px 15px rgb(10, 10, 10);
 }
 
 #categories {
@@ -119,6 +124,9 @@ input {
 }
 
 .animation1 {
+    position: relative;
+    transition-duration: 0.2s;
+    top: 17px;
     height: 11.1vh;
     padding-left: 1.414vw;
     padding-right: 1.414vw;
@@ -126,7 +134,6 @@ input {
 
 .animationtxt1 {
     white-space: nowrap;
-    transition-duration: 0.2s;
 }
 
 #account {
@@ -143,7 +150,7 @@ input {
 
 #articles {
     position: relative;
-    top: 170px;
+    top: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -276,7 +283,7 @@ p {
     background: rgb(0, 0, 0);
     height: 58vh;
     position: relative;
-    top: 350px;
+    top: 400px;
     border-radius: 35px 35px 0px 0px;
     box-shadow: 0 -7px 15px rgb(10, 10, 10);
 }
@@ -288,7 +295,7 @@ p {
     justify-content: space-evenly;
     display: flex;
     width: 650px;
-    top: 40px;
+    top: 50px;
     left: 80px;
     height: 200px;
 }
@@ -319,8 +326,8 @@ p {
 
 #download {
     position: relative;
-    bottom: 0px;
-    left: -40px;
+    top: 70px;
+    left: 290px;
     height: 100px;
     width: 100px;
 }
@@ -391,8 +398,8 @@ p {
 
 #socialmedia {
     position: relative;
-    bottom: 160px;
-    left: 1080px;
+    top: 50px;
+    left: 1050px;
     width: 370px;
     height: 100px;
     justify-content: space-evenly;
@@ -410,21 +417,22 @@ p {
 }
 
 #line {
-    position: relative;
+    position: absolute;
     background: #FF0000;
     width: 88vw;
     height: 4px;
     left: 6vw;
-    top: 80px;
+    bottom: 150px;
     border-radius: 10px;
 }
 
-#brand {
-    width: 400px;
+#bottombrand {
+    cursor: pointer;
+    position: absolute;
+    width: 340px;
     height: 50px;
-    position: relative;
     left: 110px;
-    top: 100px;
+    bottom: 70px;
 }
 
 #bottomlogo {
@@ -436,4 +444,6 @@ p {
     font-size: 24px;
     top: -76px;
     left: 128px;
+    font-family: 'Monoton', cursive; 
+    color: #FF0000;
 }

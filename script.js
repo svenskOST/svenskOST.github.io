@@ -1,5 +1,5 @@
 var navbar = document.getElementById("navbar")
-var navbarvalue = 137
+var navbarvalue = 150
 window.onscroll = function(){
   if(document.documentElement.scrollTop > navbarvalue){
     navbar.style.transitionProperty = "none"
@@ -25,17 +25,17 @@ for(let i = 0; i < animation1.length; i++){
   indicator.style.display = "block"
   indicator.style.marginRight = "auto"
   indicator.style.marginLeft = "auto"
-  indicator.style.marginTop = "10px"
+  indicator.style.marginTop = "5px"
   indicator.style.opacity = 0
   indicator.src = "img/indicatorAsset 1.png"
   animation1[i].appendChild(indicator)
   animationtxt1[i].addEventListener("mouseenter",function(){
-    animationtxt1[i].style.top = "6px"
+    animation1[i].style.top = "6px"
     indicator.style.top = "0px"
     indicator.style.opacity = 1
   })
   animationtxt1[i].addEventListener("mouseleave",function(){
-    animationtxt1[i].style.top = "16px"
+    animation1[i].style.top = "16px"
     indicator.style.top = "10px"
     indicator.style.opacity = 0
   })
