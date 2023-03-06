@@ -1,8 +1,11 @@
-- Fixa footern för olika upplösningar, övrig flexibilitet och min-max läge.
-
 KLART Runda kanter på artiklarna mm.
 
 KLART Hover animationer.
+
+KLART Fixa flickering vid hovering animationer (en div med nuvarande div inuti, 
+      parent diven är lite större och har mouseleave, medans den mindre har mouseenter).
+
+- Fixa footern för olika upplösningar, övrig flexibilitet och min-max läge.
 
 - Göra menyn som dyker upp när kategorierna ej får plats, ska ha hover animation där linjerna åker upp och ner igen lite snabbt efter varandra.
   När man klickar på menyn ska två linjer försvinna och den mittersta ska expanderas till självaste menyn - som jag gjorde på Amins sida.
@@ -17,6 +20,3 @@ KLART Hover animationer.
 - Göra forms för kontakt osv. enligt uppgiftsdelen.
 
 - Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
-
-- Fixa flickering vid hovering animationer (en div med nuvarande div inuti, 
-parent diven är lite större och har mouseleave, medans den mindre har mouseenter).
