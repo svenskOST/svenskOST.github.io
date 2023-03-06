@@ -1,6 +1,59 @@
 var media = window.matchMedia("(min-width: 1600px)")
 var media2 = window.matchMedia("(max-width: 1599px)")
 
+var topbrand = document.getElementById("topbrand")
+var toplogo = document.getElementById("toplogo")
+var topmotto = document.getElementById("topmotto")
+var categoriesarray = document.getElementsByClassName("categories")
+var indicatorarray = document.getElementsByClassName("indicator")
+var articletxtarray = document.getElementsByClassName("articletxt")
+var h1 = document.querySelector("h1")
+var h2 = document.querySelectorAll("h2")
+var mainarticletxt = document.getElementById("mainarticle")
+var articlep = document.querySelectorAll("p")
+var account = document.getElementById("account")
+var originalimgwidth = articleimg1.clientWidth
+var originalwidth = [
+  articlearray[0].clientWidth, 
+  articlearray[1].clientWidth, 
+  articlearray[2].clientWidth, 
+  articlearray[3].clientWidth
+]
+var originalheight = [
+  articlearray[0].clientHeight, 
+  articlearray[1].clientHeight, 
+  articlearray[2].clientHeight, 
+  articlearray[3].clientHeight
+]
+var originalwidth2 = [
+  articleimgarray[0].clientWidth,
+  articleimgarray[1].clientWidth,
+  articleimgarray[2].clientWidth,
+  articleimgarray[3].clientWidth
+]
+var originalheight2 = [
+  articleimgarray[0].clientHeight,
+  articleimgarray[1].clientHeight,
+  articleimgarray[2].clientHeight,
+  articleimgarray[3].clientHeight
+]
+var originalwidth3 = [
+  articletxtarray[0].clientWidth,
+  articletxtarray[1].clientWidth,
+  articletxtarray[2].clientWidth,
+  articletxtarray[3].clientWidth
+]
+var originalh2 = [
+  h2[0],
+  h2[1],
+  h2[2]
+]
+var originalp = [
+  articlep[0],
+  articlep[1],
+  articlep[2]
+]
+
 if (media.matches) {
     navbarvalue = 171.25
     topbrand.style.width = "750px"

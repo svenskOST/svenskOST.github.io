@@ -34,12 +34,13 @@ a:visited {
 
 body {
     background: #2D2D2D;
+    height: 2070px;
 }
 
 #topbox {
     width: 100%;
     height: 150px;
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 0px;
     background-color: #212121;
@@ -88,7 +89,6 @@ body {
     top: 3.5px;
 }
 
-
 #searchbar {
     position: relative;
     width: 180px;
@@ -104,7 +104,7 @@ input {
 #navbar {
     position: absolute;
     top: 150px;
-    height: 11.1vh;
+    height: 90px;
     width: 100%;
     background: #FF0000;
     z-index: 10;
@@ -113,11 +113,11 @@ input {
 }
 
 #categories {
-    position: relative;
+    position: absolute;
     width: 75vw;
     left: 2vw;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2vw;
+    font-size: 23pt;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -125,9 +125,9 @@ input {
 
 .animation1 {
     position: relative;
-    transition-duration: 0.2s;
-    top: 17px;
-    height: 11.1vh;
+    transition-duration: 0.25s;
+    top: 18px;
+    height: 8.0vh;
     padding-left: 1.414vw;
     padding-right: 1.414vw;
 }
@@ -137,20 +137,20 @@ input {
 }
 
 #account {
+    top: 24px;
     color: white;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 15pt;
+    font-size: 16pt;
     position: relative;
-    width: 140px;
-    top: -60px;
+    width: 9vw;
     left: 83vw;
     display: flex;
     justify-content: space-between;
 }
 
 #articles {
-    position: relative;
-    top: 200px;
+    position: absolute;
+    top: 325px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -281,9 +281,9 @@ p {
 
 #footer {
     background: rgb(0, 0, 0);
-    height: 58vh;
+    height: 467px;
     position: relative;
-    top: 400px;
+    top: 1603px;
     border-radius: 35px 35px 0px 0px;
     box-shadow: 0 -7px 15px rgb(10, 10, 10);
 }
@@ -398,7 +398,7 @@ p {
 
 #socialmedia {
     position: relative;
-    top: 50px;
+    top: 60px;
     left: 1050px;
     width: 370px;
     height: 100px;

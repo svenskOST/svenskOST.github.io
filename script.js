@@ -34,44 +34,21 @@ for(let i = 0; i < animation1.length; i++){
     indicator.style.top = "0px"
     indicator.style.opacity = 1
   })
-  animationtxt1[i].addEventListener("mouseleave",function(){
+  animation1[i].addEventListener("mouseleave",function(){
     animation1[i].style.top = "16px"
     indicator.style.top = "10px"
     indicator.style.opacity = 0
   })
 }
 
-var topbrand = document.getElementById("topbrand")
-var toplogo = document.getElementById("toplogo")
-var topmotto = document.getElementById("topmotto")
-var categoriesarray = document.getElementsByClassName("categories")
-var indicatorarray = document.getElementsByClassName("indicator")
 var login = document.getElementById("login")
 var register = document.getElementById("register")
 var articles = document.getElementById("articles")
 var articlearray = document.getElementsByClassName("article")
 var articleimgarray = document.getElementsByClassName("articleimg")
-var articletxtarray = document.getElementsByClassName("articletxt")
-var h1 = document.querySelector("h1")
-var h2 = document.querySelectorAll("h2")
-var mainarticletxt = document.getElementById("mainarticle")
-var articlep = document.querySelectorAll("p")
-var account = document.getElementById("account")
 var mediaico = document.getElementsByClassName("media")
+var infobox = document.getElementsByClassName("infobox")
 var infoa = document.getElementsByClassName("infoa")
-var originalimgwidth = articleimg1.clientWidth
-var originalwidth = [
-  articlearray[0].clientWidth, 
-  articlearray[1].clientWidth, 
-  articlearray[2].clientWidth, 
-  articlearray[3].clientWidth
-]
-var originalheight = [
-  articlearray[0].clientHeight, 
-  articlearray[1].clientHeight, 
-  articlearray[2].clientHeight, 
-  articlearray[3].clientHeight
-]
 var originalwidth2 = [
   articleimgarray[0].clientWidth,
   articleimgarray[1].clientWidth,
@@ -83,22 +60,6 @@ var originalheight2 = [
   articleimgarray[1].clientHeight,
   articleimgarray[2].clientHeight,
   articleimgarray[3].clientHeight
-]
-var originalwidth3 = [
-  articletxtarray[0].clientWidth,
-  articletxtarray[1].clientWidth,
-  articletxtarray[2].clientWidth,
-  articletxtarray[3].clientWidth
-]
-var originalh2 = [
-  h2[0],
-  h2[1],
-  h2[2]
-]
-var originalp = [
-  articlep[0],
-  articlep[1],
-  articlep[2]
 ]
 
 login.addEventListener("mouseenter", function(){
@@ -131,15 +92,15 @@ for(let i = 0; i < articlearray.length; i++){
 
 for(let i = 0; i < infoa.length; i++){
   let arrow = document.createElement("div")
-  infoa[i].appendChild(arrow)
+  infobox[i].appendChild(arrow)
   arrow.style.width = 0
   arrow.style.height = 0
   arrow.style.borderTop = "15px solid transparent"
   arrow.style.borderBottom = "15px solid transparent"
-  arrow.style.borderLeft = "25px solid white"
+  arrow.style.borderLeft = "25px solid red"
   arrow.style.borderRadius = "4px"
   arrow.style.opacity = 0
-  arrow.style.left = - 80 + "px"
+  arrow.style.left = - 70 + "px"
   arrow.style.top = 21 + "px"
   arrow.style.transitionProperty = "opacity, left"
   arrow.style.transitionDuration = "0.2s"
@@ -147,12 +108,12 @@ for(let i = 0; i < infoa.length; i++){
   infoa[i].addEventListener("mouseenter", function(){
     arrow.style.opacity = 1
     infoa[i].style.left = "20px"
-    arrow.style.left = - 40 + "px"
+    arrow.style.left = - 20 + "px"
   })
-  infoa[i].addEventListener("mouseleave", function(){
+  infobox[i].addEventListener("mouseleave", function(){
     arrow.style.opacity = 0
     infoa[i].style.left = "0px"
-    arrow.style.left = - 80 + "px"
+    arrow.style.left = - 70 + "px"
   })
 }
 
