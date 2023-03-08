@@ -35,6 +35,7 @@ a:visited {
 body {
     background: #2D2D2D;
     height: 2070px;
+    overflow-x: hidden;
 }
 
 #topbox {
@@ -47,7 +48,7 @@ body {
 }
 
 #topbrand {
-    position: relative;
+    position: absolute;
     width: 580px;
     height: 80px;
     top: 35px;
@@ -78,6 +79,8 @@ body {
     justify-content: end;
     top: 55px;
     right: 5.5vw;
+    transition-property: opacity;
+    transition-duration: 0.2s;
 }
 
 #mg {
@@ -87,14 +90,19 @@ body {
     filter: invert(16%) sepia(99%) saturate(7404%) hue-rotate(4deg) brightness(95%) contrast(118%);
     left: -10px;
     top: 3.5px;
+    transition-property: left,;
+    transition-duration: 0.2s;
 }
 
 #searchbar {
     position: relative;
-    width: 180px;
+    width: 11vw;
+    left: 0;
     height: 35px;
     border-radius: 10px;
     border-width: 0px;
+    transition-property: none;
+    transition-duration: 0.2s;
 }
 
 input {
@@ -127,13 +135,15 @@ input {
     position: relative;
     transition-duration: 0.25s;
     top: 18px;
-    height: 8.0vh;
+    height: 80px;
     padding-left: 1.414vw;
     padding-right: 1.414vw;
 }
 
 .animationtxt1 {
     white-space: nowrap;
+    transition-property: opacity;
+    transition-duration: 0.2s;
 }
 
 #account {
@@ -142,10 +152,44 @@ input {
     font-family: 'Titillium Web', sans-serif;
     font-size: 16pt;
     position: relative;
-    width: 9vw;
+    width: 10vw;
     left: 83vw;
     display: flex;
     justify-content: space-between;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+#menu {
+    position: absolute;
+    top: 22px;
+    right: 120px;
+    width: 80px;
+    height: 50px;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.2s;
+}
+
+.bar {
+    position: relative;
+    left: 0;
+    width: 70px;
+    height: 7px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#bar1 {
+    top: 0;
+}
+
+#bar2 {
+    top: 12px;
+}
+
+#bar3 {
+    top: 24px;
 }
 
 #articles {
@@ -281,9 +325,10 @@ p {
 
 #footer {
     background: rgb(0, 0, 0);
+    width: 100%;
     height: 467px;
     position: relative;
-    top: 1603px;
+    top: 1607px;
     border-radius: 35px 35px 0px 0px;
     box-shadow: 0 -7px 15px rgb(10, 10, 10);
 }
@@ -445,4 +490,115 @@ p {
     left: 128px;
     font-family: 'Monoton', cursive; 
     color: #FF0000;
+}
+
+@media only screen and (max-width: 1500px) {
+
+    #account {
+        opacity: 0;
+    }
+
+    #menu {
+        opacity: 1;
+    }
+
+    @media only screen and (max-width: 1440px) {
+
+        #cat7 {
+            opacity: 0;
+        }
+
+        @media only screen and (max-width: 1250px) {
+
+            #cat6 {
+                opacity: 0;
+            }
+
+            @media only screen and (max-width: 1000px) {
+
+                .animationtxt1 {
+                    opacity: 0;
+                }
+
+                #search {
+                    opacity: 0;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1650px) {
+
+    #articles {
+        width: 75vw;
+        left: 12.5vw;
+    }
+
+    @media only screen and (min-width: 2400px) {
+
+        #articles {
+            width: 60vw;
+            left: 20vw;
+            background-color: #212121;
+            border-radius: 40px;
+        }
+        
+        @media only screen and (min-width: 2850px) {
+
+            #articles {
+                width: 50vw;
+                left: 25vw;
+            }
+
+            @media only screen and (min-width: 3500px) {
+
+                #articles {
+                    width: 40vw;
+                    left: 30vw;
+                }
+
+                @media only screen and (min-width: 5700px) {
+
+                    #articles {
+                        width: 25vw;
+                        left: 37.5vw;
+                        top: 750px;
+                    }
+
+                    #footer {
+                        top: 2555px;
+                    }
+
+                    @media only screen and (min-width: 7500px) {
+
+                        #articles {
+                            width: 100vw;
+                            left: 0vw;
+                            top: 500px;
+                            background-color: #2D2D2D;
+                            border-radius: 0px;
+                        }
+
+                        .article {
+                            top: 1000px;
+                        }
+
+                        #footer {
+                            top: 3562px;
+                        }
+            
+                    }
+        
+                }
+    
+            }
+
+        }
+
+    }
 }

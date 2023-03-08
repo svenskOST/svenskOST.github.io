@@ -1,13 +1,13 @@
 var navbar = document.getElementById("navbar")
 var navbarvalue = 150
-window.onscroll = function(){
-  if(document.documentElement.scrollTop > navbarvalue){
+window.onscroll = function () {
+  if (document.documentElement.scrollTop > navbarvalue) {
     navbar.style.transitionProperty = "none"
     navbar.style.transitionDuration = "0s"
     navbar.style.top = "0px"
     navbar.style.position = "fixed"
-  } 
-  else{
+  }
+  else {
     navbar.style.transitionProperty = "none"
     navbar.style.transitionDuration = "0s"
     navbar.style.top = navbarvalue + "px"
@@ -15,9 +15,26 @@ window.onscroll = function(){
   }
 }
 
+var searchbar = document.getElementById("searchbar")
+var mg = document.getElementById("mg")
+var sbSize
+
+searchbar.addEventListener("mouseenter", function () {
+  sbSize = searchbar.clientWidth
+  searchbar.style.transitionProperty = "width, left"
+  searchbar.style.width = sbSize * 1.2 + "px"
+  searchbar.style.left = "10px"
+  mg.style.left = "0px"
+})
+searchbar.addEventListener("mouseleave", function () {
+  searchbar.style.width = sbSize + "px"
+  searchbar.style.left = "0px"
+  mg.style.left = "-10px"
+})
+
 var animation1 = document.getElementsByClassName("animation1")
 var animationtxt1 = document.getElementsByClassName("animationtxt1")
-for(let i = 0; i < animation1.length; i++){
+for (let i = 0; i < animation1.length; i++) {
   let indicator = document.createElement("img")
   indicator.style.transitionDuration = "0.2s"
   indicator.style.height = "16.8px"
@@ -29,12 +46,12 @@ for(let i = 0; i < animation1.length; i++){
   indicator.style.opacity = 0
   indicator.src = "img/indicatorAsset 1.png"
   animation1[i].appendChild(indicator)
-  animationtxt1[i].addEventListener("mouseenter",function(){
+  animationtxt1[i].addEventListener("mouseenter", function () {
     animation1[i].style.top = "6px"
     indicator.style.top = "0px"
     indicator.style.opacity = 1
   })
-  animation1[i].addEventListener("mouseleave",function(){
+  animation1[i].addEventListener("mouseleave", function () {
     animation1[i].style.top = "16px"
     indicator.style.top = "10px"
     indicator.style.opacity = 0
@@ -62,35 +79,35 @@ var originalheight2 = [
   articleimgarray[3].clientHeight
 ]
 
-login.addEventListener("mouseenter", function(){
+login.addEventListener("mouseenter", function () {
   login.style.textDecoration = "underline"
 })
-login.addEventListener("mouseleave", function(){
+login.addEventListener("mouseleave", function () {
   login.style.textDecoration = "none"
 })
 
-register.addEventListener("mouseenter", function(){
+register.addEventListener("mouseenter", function () {
   register.style.textDecoration = "underline"
 })
-register.addEventListener("mouseleave", function(){
+register.addEventListener("mouseleave", function () {
   register.style.textDecoration = "none"
 })
 
-for(let i = 0; i < articlearray.length; i++){
-  articlearray[i].addEventListener("mouseenter", function(){
+for (let i = 0; i < articlearray.length; i++) {
+  articlearray[i].addEventListener("mouseenter", function () {
     articleimgarray[i].style.borderRadius = "0px"
     articleimgarray[i].style.width = originalwidth2[i] * 1.1 + "px"
     articleimgarray[i].style.height = originalheight2[i] * 1.1 + "px"
   })
 
-  articlearray[i].addEventListener("mouseleave", function(){
+  articlearray[i].addEventListener("mouseleave", function () {
     articleimgarray[i].style.borderRadius = "20px"
     articleimgarray[i].style.width = originalwidth2[i] + "px"
     articleimgarray[i].style.height = originalheight2[i] + "px"
   })
 }
 
-for(let i = 0; i < infoa.length; i++){
+for (let i = 0; i < infoa.length; i++) {
   let arrow = document.createElement("div")
   infobox[i].appendChild(arrow)
   arrow.style.width = 0
@@ -105,19 +122,19 @@ for(let i = 0; i < infoa.length; i++){
   arrow.style.transitionProperty = "opacity, left"
   arrow.style.transitionDuration = "0.2s"
   arrow.style.position = "absolute"
-  infoa[i].addEventListener("mouseenter", function(){
+  infoa[i].addEventListener("mouseenter", function () {
     arrow.style.opacity = 1
     infoa[i].style.left = "20px"
     arrow.style.left = - 20 + "px"
   })
-  infobox[i].addEventListener("mouseleave", function(){
+  infobox[i].addEventListener("mouseleave", function () {
     arrow.style.opacity = 0
     infoa[i].style.left = "0px"
     arrow.style.left = - 70 + "px"
   })
 }
 
-for(let i = 0; i < mediaico.length; i++){
+for (let i = 0; i < mediaico.length; i++) {
   let circle = document.createElement("div")
   let x
   let y
@@ -127,19 +144,19 @@ for(let i = 0; i < mediaico.length; i++){
   circle.style.width = "80px"
   circle.style.height = "80px"
   circle.style.border = "3.5px solid red"
-  if(i == 0){
+  if (i == 0) {
     x = 14
     y = 14
   }
-  else if(i == 1){
+  else if (i == 1) {
     x = 12
     y = 13
   }
-  else if(i == 2){
+  else if (i == 2) {
     x = 13
     y = 14
   }
-  else if(i == 3){
+  else if (i == 3) {
     x = 7
     y = 6
   }
@@ -147,12 +164,30 @@ for(let i = 0; i < mediaico.length; i++){
   circle.style.top = mediaico[i].clientTop - y + "px"
   mediaico[i].appendChild(circle)
   circle.style.opacity = 0
-  mediaico[i].addEventListener("mouseenter", function(){
+  mediaico[i].addEventListener("mouseenter", function () {
     circle.style.opacity = 1
     mediaico[i].style.scale = "90%"
   })
-  mediaico[i].addEventListener("mouseleave", function(){
+  mediaico[i].addEventListener("mouseleave", function () {
     circle.style.opacity = 0
     mediaico[i].style.scale = "100%"
   })
 }
+
+var menu = document.getElementById("menu")
+
+function adapt () {
+  if (window.innerWidth < 1500) {
+    searchbar.style.width = "170px"
+    menu.style.backgroundColor = "black"
+  }
+  else {
+    searchbar.style.width = "11vw"
+    menu.style.backgroundColor = "blue"
+  }
+  //remove child, assigna till variabel, appendchild igen med variabeln
+}
+
+adapt()
+
+window.onresize = adapt()
