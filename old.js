@@ -280,3 +280,32 @@ window.onresize = function () {
         mainarticletxt.style.left = "3px"
     }
 }
+
+/*function adapt () {
+  if (window.innerWidth < 1500) {
+    searchbar.style.width = "170px"
+
+    account.style.opacity = 0
+    setTimeout(function () {
+      account.style.left = "110vw"
+    }, 200)
+
+    menu.style.right = "120px"
+    menu.style.opacity = 1
+  }
+  else {
+    searchbar.style.width = "11vw"
+
+    account.style.left = "83vw"
+    account.style.opacity = 1
+
+    menu.style.opacity = 0
+    setTimeout(function () {
+      menu.style.right = "-120px"
+    }, 200)
+  }
+}
+
+adapt()
+
+window.onresize = adapt()*/

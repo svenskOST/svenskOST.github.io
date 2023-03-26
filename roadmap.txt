@@ -5,7 +5,13 @@ KLART Hover animationer.
 KLART Fixa flickering vid hovering animationer (en div med nuvarande div inuti, 
       parent diven är lite större och har mouseleave, medans den mindre har mouseenter).
 
-- Fixa footern för olika upplösningar, övrig flexibilitet och min-max läge.
+KLART Fixa footern för olika upplösningar, övrig flexibilitet och min-max läge.
+
+- Fixa för olika upplösningar fast scaling uppåt
+
+- Optimera adjust för window resize
+
+- Mobilläge
 
 - Göra menyn som dyker upp när kategorierna ej får plats, ska ha hover animation där linjerna åker upp och ner igen lite snabbt efter varandra.
   När man klickar på menyn ska två linjer försvinna och den mittersta ska expanderas till självaste menyn - som jag gjorde på Amins sida.

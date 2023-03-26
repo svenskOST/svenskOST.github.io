@@ -18,7 +18,6 @@ window.onscroll = function () {
 var searchbar = document.getElementById("searchbar")
 var mg = document.getElementById("mg")
 var sbSize
-
 searchbar.addEventListener("mouseenter", function () {
   sbSize = searchbar.clientWidth
   searchbar.style.transitionProperty = "width, left"
@@ -60,32 +59,12 @@ for (let i = 0; i < animation1.length; i++) {
 
 var login = document.getElementById("login")
 var register = document.getElementById("register")
-var articles = document.getElementById("articles")
-var articlearray = document.getElementsByClassName("article")
-var articleimgarray = document.getElementsByClassName("articleimg")
-var mediaico = document.getElementsByClassName("media")
-var infobox = document.getElementsByClassName("infobox")
-var infoa = document.getElementsByClassName("infoa")
-var originalwidth2 = [
-  articleimgarray[0].clientWidth,
-  articleimgarray[1].clientWidth,
-  articleimgarray[2].clientWidth,
-  articleimgarray[3].clientWidth
-]
-var originalheight2 = [
-  articleimgarray[0].clientHeight,
-  articleimgarray[1].clientHeight,
-  articleimgarray[2].clientHeight,
-  articleimgarray[3].clientHeight
-]
-
 login.addEventListener("mouseenter", function () {
   login.style.textDecoration = "underline"
 })
 login.addEventListener("mouseleave", function () {
   login.style.textDecoration = "none"
 })
-
 register.addEventListener("mouseenter", function () {
   register.style.textDecoration = "underline"
 })
@@ -93,20 +72,36 @@ register.addEventListener("mouseleave", function () {
   register.style.textDecoration = "none"
 })
 
+var articlearray = document.getElementsByClassName("article")
+var articleimgarray = document.getElementsByClassName("articleimg")
+var originalwidth = [
+  articleimgarray[0].clientWidth,
+  articleimgarray[1].clientWidth,
+  articleimgarray[2].clientWidth,
+  articleimgarray[3].clientWidth
+]
+var originalheight = [
+  articleimgarray[0].clientHeight,
+  articleimgarray[1].clientHeight,
+  articleimgarray[2].clientHeight,
+  articleimgarray[3].clientHeight
+]
 for (let i = 0; i < articlearray.length; i++) {
   articlearray[i].addEventListener("mouseenter", function () {
     articleimgarray[i].style.borderRadius = "0px"
-    articleimgarray[i].style.width = originalwidth2[i] * 1.1 + "px"
-    articleimgarray[i].style.height = originalheight2[i] * 1.1 + "px"
+    articleimgarray[i].style.width = originalwidth[i] * 1.1 + "px"
+    articleimgarray[i].style.height = originalheight[i] * 1.1 + "px"
   })
 
   articlearray[i].addEventListener("mouseleave", function () {
     articleimgarray[i].style.borderRadius = "20px"
-    articleimgarray[i].style.width = originalwidth2[i] + "px"
-    articleimgarray[i].style.height = originalheight2[i] + "px"
+    articleimgarray[i].style.width = originalwidth[i] + "px"
+    articleimgarray[i].style.height = originalheight[i] + "px"
   })
 }
 
+var infobox = document.getElementsByClassName("infobox")
+var infoa = document.getElementsByClassName("infoa")
 for (let i = 0; i < infoa.length; i++) {
   let arrow = document.createElement("div")
   infobox[i].appendChild(arrow)
@@ -134,6 +129,7 @@ for (let i = 0; i < infoa.length; i++) {
   })
 }
 
+var mediaico = document.getElementsByClassName("media")
 for (let i = 0; i < mediaico.length; i++) {
   let circle = document.createElement("div")
   let x
@@ -175,19 +171,9 @@ for (let i = 0; i < mediaico.length; i++) {
 }
 
 var menu = document.getElementById("menu")
+menu.addEventListener("mouseenter", function () {
 
-function adapt () {
-  if (window.innerWidth < 1500) {
-    searchbar.style.width = "170px"
-    menu.style.backgroundColor = "black"
-  }
-  else {
-    searchbar.style.width = "11vw"
-    menu.style.backgroundColor = "blue"
-  }
-  //remove child, assigna till variabel, appendchild igen med variabeln
-}
-
-adapt()
-
-window.onresize = adapt()
+})
+menu.addEventListener("mouseenter", function () {
+  
+})

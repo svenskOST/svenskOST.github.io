@@ -158,23 +158,25 @@ input {
     justify-content: space-between;
     transition-property: opacity;
     transition-duration: 0.2s;
+    opacity: 1;
 }
 
 #menu {
     position: absolute;
     top: 22px;
-    right: 120px;
+    right: 7vw;
     width: 80px;
     height: 50px;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.2s;
+    display: none;
 }
 
 .bar {
     position: relative;
     left: 0;
-    width: 70px;
+    width: 65px;
     height: 7px;
     background-color: white;
     border-radius: 5px;
@@ -494,42 +496,48 @@ p {
 
 @media only screen and (max-width: 1500px) {
 
-    #account {
-        opacity: 0;
-    }
-
-    #menu {
-        opacity: 1;
-    }
-
     @media only screen and (max-width: 1440px) {
 
         #cat7 {
             opacity: 0;
+            display: none;
+        }
+
+        #account {
+            opacity: 0;
+            display: none;
+        }
+
+        #menu {
+            opacity: 1;
+            display: block;
         }
 
         @media only screen and (max-width: 1250px) {
 
             #cat6 {
                 opacity: 0;
+                display: none;
+            }
+
+            #articles {
+                width: 75vw;
+                left: 12.5vw;
             }
 
             @media only screen and (max-width: 1000px) {
 
                 .animationtxt1 {
                     opacity: 0;
+                    display: none;
                 }
 
                 #search {
                     opacity: 0;
                 }
-
             }
-
         }
-
     }
-
 }
 
 @media only screen and (min-width: 1650px) {
@@ -593,12 +601,8 @@ p {
                         }
             
                     }
-        
                 }
-    
             }
-
         }
-
     }
 }
