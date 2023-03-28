@@ -2,14 +2,10 @@ var navbar = document.getElementById("navbar")
 var navbarvalue = 150
 window.onscroll = function () {
   if (document.documentElement.scrollTop > navbarvalue) {
-    navbar.style.transitionProperty = "none"
-    navbar.style.transitionDuration = "0s"
     navbar.style.top = "0px"
     navbar.style.position = "fixed"
   }
   else {
-    navbar.style.transitionProperty = "none"
-    navbar.style.transitionDuration = "0s"
     navbar.style.top = navbarvalue + "px"
     navbar.style.position = "absolute";
   }
@@ -170,10 +166,46 @@ for (let i = 0; i < mediaico.length; i++) {
   })
 }
 
-var menu = document.getElementById("menu")
-menu.addEventListener("mouseenter", function () {
-
+var menuIcon = document.getElementById("menuIcon")
+var menuCont = document.getElementById("menuCont")
+var hardtyre = document.getElementById("hardtyre")
+var softtyre = document.getElementById("softtyre")
+var degs = 0
+var acc = 0
+var interval1
+var interval2
+menuIcon.addEventListener("mouseenter", function () {
+  acc = 5
+  softtyre.style.opacity = 1
+  clearInterval(interval2)
+  interval1 = setInterval(wheelSpin, 20)
+  navbar.style.borderBottomRightRadius = 0
+  menuCont.style.right = "0px"
 })
-menu.addEventListener("mouseenter", function () {
-  
+menuCont.addEventListener("mouseleave", function () {
+  softtyre.style.opacity = 0
+  clearInterval(interval1)
+  interval2 = setInterval(brake, 20)
+  navbar.style.borderBottomRightRadius = "15px"
+  menuCont.style.right = "-300px"
 })
+function wheelSpin() {
+  if (acc < 40) {
+    acc += 0.1
+  }
+  degs += acc
+  softtyre.style.transform = "rotate(" + degs + "deg)"
+  hardtyre.style.transform = "rotate(" + degs + "deg)"
+}
+function brake() {
+  if (acc > 0) {
+    acc -= 0.2
+  }
+  else {
+    acc = 0
+    clearInterval(interval2)
+  }
+  degs += acc
+  softtyre.style.transform = "rotate(" + degs + "deg)"
+  hardtyre.style.transform = "rotate(" + degs + "deg)"
+}

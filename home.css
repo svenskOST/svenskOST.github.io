@@ -118,6 +118,15 @@ input {
     z-index: 10;
     border-radius: 0 0 15px 15px;
     box-shadow: 0 8px 15px rgb(10, 10, 10);
+    transition-property: border-bottom-right-radius;
+    transition-duration: 0.2s;
+}
+
+#dropDownMenu {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: #212121;
 }
 
 #categories {
@@ -161,37 +170,53 @@ input {
     opacity: 1;
 }
 
-#menu {
+#menuIcon {
     position: absolute;
-    top: 22px;
-    right: 7vw;
-    width: 80px;
-    height: 50px;
+    top: 15px;
+    right: 8vw;
+    width: 60px;
+    height: 60px;
     opacity: 0;
     transition-property: opacity;
     transition-duration: 0.2s;
     display: none;
 }
 
-.bar {
-    position: relative;
-    left: 0;
-    width: 65px;
-    height: 7px;
-    background-color: white;
-    border-radius: 5px;
-}
-
-#bar1 {
+#menuCont {
+    position: absolute;
+    width: 300px;
+    height: 490px;
+    right: -300px;
     top: 0;
+    transition-property: right;
+    transition-duration: 0.2s;
 }
 
-#bar2 {
-    top: 12px;
+#menu {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 90px;
+    left: 0;
+    background-color: black;
+    border-radius: 60px 0 60px 0;
+    border-left: 2px solid #FF0000;
+    border-bottom: 2px solid #FF0000;
 }
 
-#bar3 {
-    top: 24px;
+.tyre {
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    width: 60px;
+    position: absolute;
+}
+
+#hardtyre {
+    opacity: 1;
+}
+
+#softtyre {
+    opacity: 0;
 }
 
 #articles {
@@ -508,7 +533,7 @@ p {
             display: none;
         }
 
-        #menu {
+        #menuIcon {
             opacity: 1;
             display: block;
         }
