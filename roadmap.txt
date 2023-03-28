@@ -27,10 +27,6 @@ KLART Fixa footern för olika upplösningar, övrig flexibilitet och min-max lä
 
 - Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
 
-Meny animation:
-Vid hover flyger strecken snabbt åt höger ut ur skärmen, lite efter varandra.
-Sedan kommer en vit F1 bil ikon (som i drag race spelet) in till samma plats från vänster med ease-out.
-När hover slutar så fortsätter bilen iväg till höger och strecken kommer tillbaka in från höger.
-När man klickar åker bilen iväg åt höger och ett X dyker upp med opacity och lite snurr, sedan animation för självaste menyn.
-
-Eller så menyn kommer direkt vid hover och försvinner vid mouse leave?
+Buggar:
+Kategorierna i menyn har ingen transition första gången de rörs efter sidan laddats
+Search baren verkar få konstig storlek (väldigt liten) ihop med resize eller refresh

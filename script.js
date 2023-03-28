@@ -70,29 +70,18 @@ register.addEventListener("mouseleave", function () {
 
 var articlearray = document.getElementsByClassName("article")
 var articleimgarray = document.getElementsByClassName("articleimg")
-var originalwidth = [
-  articleimgarray[0].clientWidth,
-  articleimgarray[1].clientWidth,
-  articleimgarray[2].clientWidth,
-  articleimgarray[3].clientWidth
-]
-var originalheight = [
-  articleimgarray[0].clientHeight,
-  articleimgarray[1].clientHeight,
-  articleimgarray[2].clientHeight,
-  articleimgarray[3].clientHeight
-]
+var articletxtarray = document.getElementsByClassName("articletxt")
 for (let i = 0; i < articlearray.length; i++) {
   articlearray[i].addEventListener("mouseenter", function () {
     articleimgarray[i].style.borderRadius = "0px"
-    articleimgarray[i].style.width = originalwidth[i] * 1.1 + "px"
-    articleimgarray[i].style.height = originalheight[i] * 1.1 + "px"
+    articleimgarray[i].style.scale = 1.1
+    articletxtarray[i].style.top = "25px"
   })
 
   articlearray[i].addEventListener("mouseleave", function () {
     articleimgarray[i].style.borderRadius = "20px"
-    articleimgarray[i].style.width = originalwidth[i] + "px"
-    articleimgarray[i].style.height = originalheight[i] + "px"
+    articleimgarray[i].style.scale = 1
+    articletxtarray[i].style.top = "5px"
   })
 }
 
@@ -208,4 +197,72 @@ function brake() {
   degs += acc
   softtyre.style.transform = "rotate(" + degs + "deg)"
   hardtyre.style.transform = "rotate(" + degs + "deg)"
+}
+
+var menu = document.getElementById("menu")
+var menuCats = document.getElementsByClassName("menuCats")
+var menuCatsContCont = document.getElementById("menuCatsContCont")
+var menuHeight = 80
+function MenuOrganizer () {
+  menuHeight = 85
+  for (i = 0; i < menuCats.length; i++) {
+    if (window.getComputedStyle(animationtxt1[i]).display == "none") {
+      menuCats[i].style.display = "block"
+      menuHeight += 45
+      menu.style.height = menuHeight + "px"
+      menuCont.style.height = menuHeight + 90 + "px"
+      menuCatsContCont.style.height = menuHeight - 130 + "px"
+    }
+    else {
+      menuCats[i].style.display = "none"
+      menu.style.height = menuHeight + "px"
+      menuCont.style.height = menuHeight + 90 + "px"
+      menuCatsContCont.style.height = menuHeight - 130 + "px"
+    }
+  }
+}
+MenuOrganizer ()
+window.addEventListener("resize", MenuOrganizer)
+
+var menuLogin = document.getElementById("menuLogin")
+var menuRegister = document.getElementById("menuRegister")
+menuLogin.addEventListener("mouseenter", function () {
+  menuLogin.style.textDecoration = "underline"
+})
+menuLogin.addEventListener("mouseleave", function () {
+  menuLogin.style.textDecoration = "none"
+})
+menuRegister.addEventListener("mouseenter", function () {
+  menuRegister.style.textDecoration = "underline"
+})
+menuRegister.addEventListener("mouseleave", function () {
+  menuRegister.style.textDecoration = "none"
+})
+
+var menuCatsCont = document.getElementsByClassName("menuCatsCont")
+for (let i = 0; i < menuCats.length; i++) {
+  let arrow = document.createElement("div")
+  menuCatsCont[i].appendChild(arrow)
+  arrow.style.width = 0
+  arrow.style.height = 0
+  arrow.style.borderTop = "10px solid transparent"
+  arrow.style.borderBottom = "10px solid transparent"
+  arrow.style.borderLeft = "18px solid red"
+  arrow.style.borderRadius = "3px"
+  arrow.style.opacity = 0
+  arrow.style.left = - 60 + "px"
+  arrow.style.top = 12 + "px"
+  arrow.style.transitionProperty = "opacity, left"
+  arrow.style.transitionDuration = "0.2s"
+  arrow.style.position = "absolute"
+  menuCats[i].addEventListener("mouseenter", function () {
+    arrow.style.opacity = 1
+    menuCats[i].style.left = "20px"
+    arrow.style.left = - 10 + "px"
+  })
+  menuCatsCont[i].addEventListener("mouseleave", function () {
+    arrow.style.opacity = 0
+    menuCats[i].style.left = "0px"
+    arrow.style.left = - 60 + "px"
+  })
 }
