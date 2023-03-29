@@ -13,18 +13,27 @@ window.onscroll = function () {
 
 var searchbar = document.getElementById("searchbar")
 var mg = document.getElementById("mg")
-var sbSize
 searchbar.addEventListener("mouseenter", function () {
-  sbSize = searchbar.clientWidth
-  searchbar.style.transitionProperty = "width, left"
-  searchbar.style.width = sbSize * 1.2 + "px"
-  searchbar.style.left = "10px"
-  mg.style.left = "0px"
+  searchbar.style.width = "210px"
+  searchbar.style.left = "20px"
+  mg.style.left = "10px"
 })
 searchbar.addEventListener("mouseleave", function () {
-  searchbar.style.width = sbSize + "px"
+  searchbar.style.width = "160px"
   searchbar.style.left = "0px"
   mg.style.left = "-10px"
+})
+var searchbar2 = document.getElementById("searchbar2")
+var mg2 = document.getElementById("mg2")
+searchbar2.addEventListener("mouseenter", function () {
+  searchbar2.style.width = "30vw"
+  searchbar2.style.left = "-20px"
+  mg2.style.left = "-27px"
+})
+searchbar2.addEventListener("mouseleave", function () {
+  searchbar2.style.width = "25vw"
+  searchbar2.style.left = "0px"
+  mg2.style.left = "-10px"
 })
 
 var animation1 = document.getElementsByClassName("animation1")

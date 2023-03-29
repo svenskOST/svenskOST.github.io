@@ -79,8 +79,6 @@ body {
     justify-content: end;
     top: 55px;
     right: 5.5vw;
-    transition-property: opacity;
-    transition-duration: 0.2s;
 }
 
 #mg {
@@ -96,12 +94,42 @@ body {
 
 #searchbar {
     position: relative;
-    width: 11vw;
+    width: 160px;
     left: 0;
     height: 35px;
     border-radius: 10px;
     border-width: 0px;
-    transition-property: none;
+    transition-property: width, left;
+    transition-duration: 0.2s;
+}
+
+#search2 {
+    position: absolute;
+    display: none;
+    justify-content: end;
+    top: 27px;
+    left: 14vw;
+    z-index: 1;
+}
+
+#mg2 {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    left: -10px;
+    top: 3.5px;
+    transition-property: left,;
+    transition-duration: 0.2s;
+}
+
+#searchbar2 {
+    position: relative;
+    width: 25vw;
+    left: 0px;
+    height: 35px;
+    border-radius: 10px;
+    border-width: 0px;
+    transition-property: width, left;
     transition-duration: 0.2s;
 }
 
@@ -173,7 +201,7 @@ input {
 #menuIcon {
     position: absolute;
     top: 15px;
-    right: 115px;
+    right: 93px;
     width: 60px;
     height: 60px;
     opacity: 0;
@@ -184,7 +212,7 @@ input {
 
 #menuCont {
     position: absolute;
-    width: 300px;
+    width: 260px;
     height: 490px;
     right: -300px;
     top: 0;
@@ -194,7 +222,7 @@ input {
 
 #menu {
     position: absolute;
-    width: 300px;
+    width: 260px;
     height: 400px;
     top: 90px;
     left: 0;
@@ -211,7 +239,7 @@ input {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 260px;
     height: 270px;
 }
 
@@ -225,6 +253,7 @@ input {
     display: none;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20pt;
+    left: 0px;
     transition-property: left;
     transition-duration: 0.2s;
 }
@@ -235,7 +264,7 @@ input {
     font-family: 'Titillium Web', sans-serif;
     font-size: 16pt;
     position: absolute;
-    width: 200px;
+    width: 170px;
     left: 50px;
     display: flex;
     justify-content: space-between;
@@ -597,7 +626,11 @@ p {
                 }
 
                 #search {
-                    opacity: 0;
+                    display: none;
+                }
+
+                #search2 {
+                    display: flex;
                 }
             }
         }

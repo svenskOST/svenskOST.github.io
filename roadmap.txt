@@ -1,21 +1,6 @@
-KLART Runda kanter på artiklarna mm.
-
-KLART Hover animationer.
-
-KLART Fixa flickering vid hovering animationer (en div med nuvarande div inuti, 
-      parent diven är lite större och har mouseleave, medans den mindre har mouseenter).
-
-KLART Fixa footern för olika upplösningar, övrig flexibilitet och min-max läge.
-
 - Fixa för olika upplösningar fast scaling uppåt
 
-- Optimera adjust för window resize
-
 - Mobilläge
-
-- Göra menyn som dyker upp när kategorierna ej får plats, ska ha hover animation där linjerna åker upp och ner igen lite snabbt efter varandra.
-  När man klickar på menyn ska två linjer försvinna och den mittersta ska expanderas till självaste menyn - som jag gjorde på Amins sida.
-  I menyn ska kategorierna finnas och vid hover ska de flyttas åt höger med en triangel framför - som de flyttas uppåt normalt sett.
 
 - Göra klart all content - artiklar och subsidor
 
@@ -26,7 +11,3 @@ KLART Fixa footern för olika upplösningar, övrig flexibilitet och min-max lä
 - Göra forms för kontakt osv. enligt uppgiftsdelen.
 
 - Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
-
-Buggar:
-Kategorierna i menyn har ingen transition första gången de rörs efter sidan laddats
-Search baren verkar få konstig storlek (väldigt liten) ihop med resize eller refresh
