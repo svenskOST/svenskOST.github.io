@@ -1,15 +1,19 @@
 var navbar = document.getElementById("navbar")
 var navbarvalue = 150
-window.onscroll = function () {
+window.onscroll = NavbarPositioner
+function NavbarPositioner () {
   if (document.documentElement.scrollTop > navbarvalue) {
     navbar.style.top = "0px"
     navbar.style.position = "fixed"
+    navbar.style.width = "100%"
   }
   else {
     navbar.style.top = navbarvalue + "px"
     navbar.style.position = "absolute";
+    navbar.style.width = "calc(100% - 14.5px)"
   }
 }
+NavbarPositioner ()
 
 var searchbar = document.getElementById("searchbar")
 var mg = document.getElementById("mg")
@@ -208,11 +212,13 @@ function brake() {
   hardtyre.style.transform = "rotate(" + degs + "deg)"
 }
 
+var body = document.getElementsByTagName("body")[0]
+var articles = document.getElementById("articles")
 var menu = document.getElementById("menu")
 var menuCats = document.getElementsByClassName("menuCats")
 var menuCatsContCont = document.getElementById("menuCatsContCont")
 var menuHeight = 80
-function MenuOrganizer () {
+function Organizer () {
   menuHeight = 85
   for (i = 0; i < menuCats.length; i++) {
     if (window.getComputedStyle(animationtxt1[i]).display == "none") {
@@ -229,9 +235,12 @@ function MenuOrganizer () {
       menuCatsContCont.style.height = menuHeight - 130 + "px"
     }
   }
+
+  body.style.height = articles.clientHeight + 900 + "px"
+  console.log(articles.clientHeight)
 }
-MenuOrganizer ()
-window.addEventListener("resize", MenuOrganizer)
+Organizer ()
+window.addEventListener("resize", Organizer)
 
 var menuLogin = document.getElementById("menuLogin")
 var menuRegister = document.getElementById("menuRegister")
