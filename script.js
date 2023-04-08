@@ -236,8 +236,12 @@ function Organizer () {
     }
   }
 
-  body.style.height = articles.clientHeight + 900 + "px"
-  console.log(articles.clientHeight)
+  if (window.innerWidth < 660) {
+    body.style.height = articles.clientHeight + 200 + "px"
+  }
+  else {
+    body.style.height = articles.clientHeight + 900 + "px"
+  }
 }
 Organizer ()
 window.addEventListener("resize", Organizer)

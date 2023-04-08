@@ -418,6 +418,7 @@ p {
 #articletxt4 {
     position: relative;
     width: 500px;
+    left: -50px;
 }
 
 #footer {
@@ -620,6 +621,41 @@ p {
                 left: 12.5vw;
             }
 
+            @media only screen and (max-width: 1150px) {
+
+                #info {
+                    scale: 60%;
+                    flex-direction: column;
+                    width: 280px;
+                    height: 330px;
+                    justify-content: center;
+                    top: -10px;
+                    left: 7vw;
+                }
+
+                #info1 {
+                    justify-content: center;
+                    width: 250px;
+                }
+
+                #info2 {
+                    justify-content: center;
+                }
+
+                #download {
+                    scale: 70%;
+                    top: 30px;
+                    right: 8vw;
+                }
+
+                #socialmedia {
+                    scale: 70%;
+                    top: 210px;
+                    right: calc(8vw - 45px);
+                }
+
+            }
+
             @media only screen and (max-width: 1000px) {
 
                 .animationtxt1 {
@@ -634,9 +670,47 @@ p {
                 #search2 {
                     display: flex;
                 }
+
+                @media only screen and (max-width: 660px) {
+
+                    #topbrand {
+                        scale: 70%;
+                        left: -50px;
+                    }
+
+                    #articles {
+                        scale: 75%;
+                        top: 0;
+                    }
+
+                    #info {
+                        left: -10px;
+                    }
+                
+                    #download {
+                        right: 4vw;
+                        scale: 65%
+                    }
+
+                    #socialmedia {
+                        scale: 60%;
+                        right: calc(4vw - 45px);
+                        top: 200px;
+                    }
+
+                    #bottombrand {
+                        scale: 80%;
+                        left: 20px;
+                    }
+
+                }
+
             }
+
         }
+
     }
+
 }
 
 @media only screen and (min-width: 1650px) {
@@ -700,8 +774,13 @@ p {
                         }
             
                     }
+
                 }
+
             }
+
         }
+
     }
+
 }
