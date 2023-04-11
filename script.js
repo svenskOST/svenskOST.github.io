@@ -213,7 +213,7 @@ function brake() {
 }
 
 var body = document.getElementsByTagName("body")[0]
-var articles = document.getElementById("articles")
+var mainCont = document.getElementById("mainCont")
 var menu = document.getElementById("menu")
 var menuCats = document.getElementsByClassName("menuCats")
 var menuCatsContCont = document.getElementById("menuCatsContCont")
@@ -237,10 +237,10 @@ function Organizer () {
   }
 
   if (window.innerWidth < 660) {
-    body.style.height = articles.clientHeight + 200 + "px"
+    body.style.height = mainCont.clientHeight + 200 + "px"
   }
   else {
-    body.style.height = articles.clientHeight + 900 + "px"
+    body.style.height = mainCont.clientHeight + 900 + "px"
   }
 }
 Organizer ()

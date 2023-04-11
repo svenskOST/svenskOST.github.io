@@ -1,4 +1,4 @@
-- Fixa för olika upplösningar fast scaling uppåt
+KLART Fixa för olika upplösningar fast scaling uppåt
 
 - Mobilläge
 
