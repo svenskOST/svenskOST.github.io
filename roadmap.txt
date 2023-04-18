@@ -8,6 +8,11 @@ KLART Fixa för olika upplösningar fast scaling uppåt
 
 - Skapande utav konton.
 
-- Göra forms för kontakt osv. enligt uppgiftsdelen.
-
 - Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
+
+
+Contact:
+
+- Fixa placeholder och input avstånd till kanter inuti input boxarna på något sätt
+
+- Göra en txt fil som skrivs över med ticket submit
