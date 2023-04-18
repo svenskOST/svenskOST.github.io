@@ -346,6 +346,8 @@ p {
 }
 
 #name {
+    transition-property: opacity;
+    transition-duration: 0.2s;
     height: 35px;
     border-radius: 10px;
     border: none;
@@ -356,6 +358,8 @@ p {
 }
 
 #email {
+    transition-property: opacity;
+    transition-duration: 0.2s;
     height: 35px;
     border-radius: 10px;
     border: none;
@@ -366,6 +370,8 @@ p {
 }
 
 #topics {
+    transition-property: opacity;
+    transition-duration: 0.3s;
     font-family: Arial;
     font-size: 20px;
     position: relative;
@@ -377,6 +383,8 @@ p {
 }
 
 #message {
+    transition-property: opacity;
+    transition-duration: 0.4s;
     overflow-x: hidden;
     position: relative;
     top: 115px;
@@ -399,6 +407,8 @@ p {
 }
 
 #submit {
+    transition-property: opacity;
+    transition-duration: 0.5s;
     background-color: #FF0000;
     border: none;
     color: white;
@@ -413,6 +423,26 @@ p {
     left: calc(50% - 65px);
     transition-property: scale;
     transition-duration: 0.2s;
+}
+
+#checkmark {
+    position: absolute;
+    top: 30px;
+    left: calc(50% - 315px);
+    display: none;
+}
+
+#submittedText {
+    position: relative;
+    top: 50px;
+    left: 100px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0;
 }
 
 #footer {
