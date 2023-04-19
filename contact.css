@@ -95,14 +95,19 @@ body {
 }
 
 #searchbar {
+    padding: 0 10px 0 10px;
     position: relative;
-    width: 160px;
+    width: 140px;
     left: 0;
     height: 35px;
     border-radius: 10px;
     border-width: 0px;
     transition-property: width, left;
     transition-duration: 0.2s;
+}
+
+#searchbar::placeholder {
+    left: 0;
 }
 
 #search2 {
@@ -355,6 +360,11 @@ p {
     width: 170px;
     position: relative;
     left: calc(50% - 220px);
+    text-align: center;
+}
+
+#name::placeholder {
+    left: 0;
 }
 
 #email {
@@ -367,9 +377,15 @@ p {
     position: relative;
     top: 40px;
     left: calc(50% - 200px);
+    text-align: center;
+}
+
+#email::placeholder {
+    left: 0;
 }
 
 #topics {
+    padding: 0 5px 0 5px;
     transition-property: opacity;
     transition-duration: 0.3s;
     font-family: Arial;
@@ -382,20 +398,31 @@ p {
     width: 170px;
 }
 
+#topics:hover {
+    cursor: pointer;
+}
+
 #message {
     transition-property: opacity;
     transition-duration: 0.4s;
     overflow-x: hidden;
     position: relative;
     top: 115px;
-    width: 700px;
+    width: 80%;
     resize: none;
-    left: calc(50% - 350px);
+    left: calc(50% - 41%);
     height: 130px;
     border-radius: 10px;
     border: none;
     font-size: 15pt;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1%;
+    z-index: 2;
+}
+
+#message::placeholder {
+    top: 3px;
+    left: 0;
 }
 
 #message::-webkit-scrollbar-track {
@@ -418,7 +445,7 @@ p {
     font-weight: bold;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     font-size: 20pt;
     left: calc(50% - 65px);
     transition-property: scale;
@@ -433,9 +460,9 @@ p {
 }
 
 #submittedText {
-    position: relative;
-    top: 50px;
-    left: 100px;
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 330px);
     width: 500px;
     display: flex;
     flex-wrap: wrap;

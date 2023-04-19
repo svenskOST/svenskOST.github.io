@@ -18,12 +18,12 @@ NavbarPositioner ()
 var searchbar = document.getElementById("searchbar")
 var mg = document.getElementById("mg")
 searchbar.addEventListener("mouseenter", function () {
-  searchbar.style.width = "210px"
+  searchbar.style.width = "190px"
   searchbar.style.left = "20px"
   mg.style.left = "10px"
 })
 searchbar.addEventListener("mouseleave", function () {
-  searchbar.style.width = "160px"
+  searchbar.style.width = "140px"
   searchbar.style.left = "0px"
   mg.style.left = "-10px"
 })

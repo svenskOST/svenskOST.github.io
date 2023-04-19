@@ -95,8 +95,9 @@ body {
 }
 
 #searchbar {
+    padding: 0 10px 0 10px;
     position: relative;
-    width: 160px;
+    width: 140px;
     left: 0;
     height: 35px;
     border-radius: 10px;
