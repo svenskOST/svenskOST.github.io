@@ -30,12 +30,12 @@ searchbar.addEventListener("mouseleave", function () {
 var searchbar2 = document.getElementById("searchbar2")
 var mg2 = document.getElementById("mg2")
 searchbar2.addEventListener("mouseenter", function () {
-  searchbar2.style.width = "30vw"
+  searchbar2.style.width = "calc(30vw - 20px)"
   searchbar2.style.left = "-20px"
   mg2.style.left = "-27px"
 })
 searchbar2.addEventListener("mouseleave", function () {
-  searchbar2.style.width = "25vw"
+  searchbar2.style.width = "calc(25vw - 20px)"
   searchbar2.style.left = "0px"
   mg2.style.left = "-10px"
 })
@@ -237,7 +237,12 @@ function Organizer () {
   }
 
   if (window.innerWidth < 660) {
-    body.style.height = mainCont.clientHeight + 200 + "px"
+    if (document.title == "FanFormula - Contact") {
+      body.style.height = mainCont.clientHeight + 620 + "px"
+    }
+    else {
+      body.style.height = mainCont.clientHeight + 200 + "px"
+    }
   }
   else {
     body.style.height = mainCont.clientHeight + 900 + "px"

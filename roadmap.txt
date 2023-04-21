@@ -1,4 +1,4 @@
-KLART Fixa för olika upplösningar fast scaling uppåt
+Home:
 
 - Mobilläge
 
@@ -10,6 +10,10 @@ KLART Fixa för olika upplösningar fast scaling uppåt
 
 - Göra sökfunktionen (kolla med Simon om hans sökmotor på hans kamera webbsida).
 
+- Responsivitet har slutat funka för artiklarna?
+
+- Footer ej korrekt när fönster är mycket smalt.
+
 
 Contact:
 
@@ -17,4 +21,4 @@ KLART Fixa placeholder och input avstånd till kanter inuti input boxarna på n�
 
 - Validering och tips.
 
-- Responsivitet.
+- Responsivitet för olika upplösningar.

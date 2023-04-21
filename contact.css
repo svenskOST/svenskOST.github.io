@@ -131,13 +131,18 @@ body {
 
 #searchbar2 {
     position: relative;
-    width: 25vw;
+    width: calc(25vw - 20px);
+    padding: 0 10px 0 10px;
     left: 0px;
     height: 35px;
     border-radius: 10px;
     border-width: 0px;
     transition-property: width, left;
     transition-duration: 0.2s;
+}
+
+#searchbar2::placeholder {
+    left: 0;
 }
 
 input {
@@ -684,11 +689,6 @@ h2 {
                 display: none;
             }
 
-            #articles {
-                width: 75vw;
-                left: 12.5vw;
-            }
-
             @media only screen and (max-width: 1150px) {
 
                 #info {
@@ -739,6 +739,32 @@ h2 {
                     display: flex;
                 }
 
+                #form {
+                    height: 550px;
+                }
+
+                #message {
+                    top: 215px;
+                }
+
+                #topics {
+                    top: 170px;
+                }
+
+                #email {
+                    top: 120px;
+                    left: calc(50% - 125px);
+                    position: absolute;
+                }
+
+                #name {
+                    left: calc(50% - 85px);
+                }
+
+                #submittedText {
+                    scale: 60%;
+                }
+
                 @media only screen and (max-width: 660px) {
 
                     #topbrand {
@@ -746,9 +772,18 @@ h2 {
                         left: -50px;
                     }
 
-                    #articles {
+                    #mainCont {
                         scale: 75%;
-                        top: 0;
+                        top: 180px;
+                        left: 5px;
+                    }
+
+                    #form {
+                        width: 450px;
+                    }
+
+                    #contacts4 {
+                        width: 410px;
                     }
 
                     #info {
