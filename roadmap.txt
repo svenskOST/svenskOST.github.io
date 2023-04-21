@@ -13,6 +13,8 @@ KLART Fixa för olika upplösningar fast scaling uppåt
 
 Contact:
 
-- Fixa placeholder och input avstånd till kanter inuti input boxarna på något sätt
+KLART Fixa placeholder och input avstånd till kanter inuti input boxarna på något sätt
 
-- Göra en txt fil som skrivs över med ticket submit
+- Validering och tips.
+
+- Responsivitet.

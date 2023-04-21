@@ -6,7 +6,16 @@ var submit = document.getElementById("submit")
 var checkmark = document.getElementById("checkmark")
 var submittedText = document.getElementById("submittedText")
 
+function Capitalize () {
+    var firstChar = namee.value[0]
+    if (firstChar != firstChar.toUpperCase()) {
+        namee.value[0] = firstChar.toUpperCase()
+        console.log(namee.value[0])
+    }
+}
+
 function SubmitFunc () {
+    Capitalize ()
     console.log("Name: " + namee.value)
     console.log("From: " + email.value)
     console.log("Topic: " + topics.value)
@@ -43,4 +52,10 @@ submit.addEventListener("mouseup", function () {
     submit.style.scale = "120%"
     SubmitAnim()
     SubmitFunc()
+})
+
+namee.addEventListener("change", function () {
+    if (namee.value == "") {
+        namee.style.color = "red"
+    }
 })

@@ -293,7 +293,6 @@ input {
 }
 
 #mainCont {
-    user-select: none;
     color: white;
     font-family: 'Titillium Web', sans-serif;
     position: absolute;
@@ -326,11 +325,28 @@ h2 {
     font-size: 30pt;
 }
 
-p {
+.contacts {
     position: relative;
     font-size: 20pt;
     left: 80px;
     top: 10px;
+}
+
+.contacts::selection {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+#contacts2 {
+    top: 35px;
+}
+
+#contacts3 {
+    top: 35px;
+}
+
+#contacts4 {
+    position: relative;
+    top: 48px;
 }
 
 #information {
@@ -461,8 +477,8 @@ p {
 
 #submittedText {
     position: absolute;
-    top: 250px;
-    left: calc(50% - 330px);
+    top: 270px;
+    left: calc(50% - 250px);
     width: 500px;
     display: flex;
     flex-wrap: wrap;
@@ -470,6 +486,7 @@ p {
     transition-property: opacity;
     transition-duration: 1s;
     opacity: 0;
+    font-size: 20pt;
 }
 
 #footer {
