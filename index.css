@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Titillium Web';
-    src: url("fonts/TitilliumWeb-Regular.ttf");
+    src: local("fonts/TitilliumWeb-Regular.ttf");
 }
 
 * {
