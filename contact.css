@@ -371,21 +371,48 @@ h2 {
     border: 3px solid #FF0000;
 }
 
+#nameEmail {
+    top: 35px;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    left: 10%;
+}
+
+#nameCont {
+    height: 35px;
+    top: 40px;
+    width: 170px;
+}
+
 #name {
     transition-property: opacity;
     transition-duration: 0.2s;
     height: 35px;
     border-radius: 10px;
     border: none;
-    top: 40px;
     width: 170px;
-    position: relative;
-    left: calc(50% - 220px);
     text-align: center;
 }
 
 #name::placeholder {
     left: 0;
+}
+
+.errorText {
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FF0000;
+    position: relative;
+    top: 5px;
+    left: 10px;
+    display: none;
+}
+
+#emailCont {
+    height: 35px;
+    width: 250px;
 }
 
 #email {
@@ -395,14 +422,19 @@ h2 {
     border-radius: 10px;
     border: none;
     width: 250px;
-    position: relative;
-    top: 40px;
-    left: calc(50% - 200px);
     text-align: center;
 }
 
 #email::placeholder {
     left: 0;
+}
+
+#topicsCont {
+    position: absolute;
+    top: 110px;
+    left: calc(50% - 85px);
+    height: 35px;
+    width: 170px;
 }
 
 #topics {
@@ -411,10 +443,8 @@ h2 {
     transition-duration: 0.3s;
     font-family: Arial;
     font-size: 20px;
-    position: relative;
-    top: 80px;
+    position: absolute;
     border-radius: 10px;
-    left: calc(50% - 85px);
     height: 35px;
     width: 170px;
 }
@@ -423,15 +453,24 @@ h2 {
     cursor: pointer;
 }
 
+#errorText3 {
+    top: 15px;
+}
+
+#messageCont {
+    top: 180px;
+    width: 80%;
+    height: 130px;
+    position: absolute;
+    left: calc(50% - 33%);
+}
+
 #message {
     transition-property: opacity;
     transition-duration: 0.4s;
     overflow-x: hidden;
-    position: relative;
-    top: 115px;
     width: 80%;
     resize: none;
-    left: calc(50% - 41%);
     height: 130px;
     border-radius: 10px;
     border: none;
@@ -452,6 +491,10 @@ h2 {
 
 #message::-webkit-scrollbar {
     width: 10px;
+}
+
+#errorText4 {
+    top: 0;
 }
 
 #submit {
@@ -743,22 +786,24 @@ h2 {
                     height: 550px;
                 }
 
+                #messageCont {
+                    top: 260px;
+                }
+
                 #message {
-                    top: 215px;
+                    height: 150px;
                 }
 
-                #topics {
-                    top: 170px;
+                #topicsCont {
+                    top: 180px;
                 }
 
-                #email {
-                    top: 120px;
-                    left: calc(50% - 125px);
-                    position: absolute;
-                }
-
-                #name {
-                    left: calc(50% - 85px);
+                #nameEmail {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    width: 50%;
+                    left: 25%;
+                    height: 27%;
                 }
 
                 #submittedText {
@@ -783,7 +828,7 @@ h2 {
                     }
 
                     #contacts4 {
-                        width: 410px;
+                        width: 425px;
                     }
 
                     #info {

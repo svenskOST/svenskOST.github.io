@@ -102,18 +102,32 @@
             <h1 id="contacts4">Or Submit a Ticket</h1>
         </div>
         <div id="form">
-            <input type="text" name="name" id="name" spellcheck="false" placeholder="Enter your name">
-            <input type="email" name="email" id="email" spellcheck="false" placeholder="Enter a valid email address"><br>
-            <select name="topics" id="topics">
-                <option disabled selected hidden>Choose a topic</option>
-                <option value="bug">Report a bug</option>
-                <option value="feedback">Feedback</option>
-                <option value="bussiness">Bussiness</option>
-                <option value="other">Other</option>
-            </select><br>
-            <textarea name="message" id="message" cols="30" rows="10" spellcheck="false" placeholder="Enter your message"></textarea><br>
+            <div id="nameEmail">
+                <div id="nameCont">
+                    <input type="text" name="name" id="name" spellcheck="false" placeholder="Enter your name">
+                    <div class="errorText" id="errorText1">Invalid name</div>
+                </div>
+                <div id="emailCont">
+                    <input type="email" name="email" id="email" spellcheck="false" placeholder="Enter a valid email address">
+                    <div class="errorText" id="errorText2">Please enter a valid email</div>
+                </div>
+            </div>
+            <div id="topicsCont">
+                <select name="topics" id="topics">
+                    <option disabled selected hidden value="none">Choose a topic</option>
+                    <option value="bug">Report a bug</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="bussiness">Bussiness</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <div class="errorText" id="errorText3">Please select topic</div>
+            </div>
+            <div id="messageCont">
+                <textarea name="message" id="message" cols="30" rows="10" spellcheck="false" placeholder="Enter your message"></textarea>
+                <div class="errorText" id="errorText4">Message cannot be empty</div>
+            </div>
             <input type="submit" value="Submit" name="submit" id="submit">
-            <svg id="checkmark" viewBox="0 0 438.2 455.26" width="450" height="200" stroke="red" stroke-width="30" fill="none">
+            <svg id="checkmark" viewBox="0 0 438.2 455.26" width="450" height="200" stroke="rgb(0,255,0)" stroke-width="30" fill="none">
                 <path d="M322.89,316c1.29.24,2,1.28,2.86,2.12q22,22,44.09,44.07l39.62,39.62c3,3,3,3,5.43-.37L522.21,251.17q75.74-106,151.41-212.09c1.9-2.66,3.15-2.74,5.7-.88q20,14.53,40.19,28.71c2.43,1.71,2.8,2.86,1,5.43q-70.83,98.92-141.49,198L438.13,467.53c-5.39,7.56-10.9,15-16.15,22.69-1.74,2.55-2.76,2.56-4.91.4q-42.93-43.11-86-86.08c-15.31-15.32-30.59-30.68-46-45.91-2.17-2.14-2.21-3.41,0-5.55,11.82-11.63,23.49-23.41,35.22-35.12A5.79,5.79,0,0,1,322.89,316Z"/>
             </svg>
             <div id="submittedText">
